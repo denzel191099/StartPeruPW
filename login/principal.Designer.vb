@@ -23,6 +23,7 @@ Partial Class principal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(principal))
         Me.Panelcabecera = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panelmenu = New System.Windows.Forms.Panel()
@@ -159,6 +160,7 @@ Partial Class principal
         '
         'Panelcontenedor
         '
+        Me.Panelcontenedor.BackgroundImage = CType(resources.GetObject("Panelcontenedor.BackgroundImage"), System.Drawing.Image)
         Me.Panelcontenedor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panelcontenedor.Location = New System.Drawing.Point(220, 40)
         Me.Panelcontenedor.Name = "Panelcontenedor"

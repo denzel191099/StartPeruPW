@@ -76,4 +76,8 @@ Public Class principal
     Private Sub btngestioncliente_Click(sender As Object, e As EventArgs) Handles btngestioncliente.Click
         abrirpanelform(New cliente)
     End Sub
+
+    Private Sub Panelcabecera_Paint(sender As Object, e As PaintEventArgs) Handles Panelcabecera.Paint
+
+    End Sub
 End Class
