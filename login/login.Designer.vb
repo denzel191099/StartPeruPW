@@ -22,6 +22,7 @@ Partial Class login
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(login))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btncerrar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -39,26 +40,28 @@ Partial Class login
         Me.Panel1.Controls.Add(Me.btncerrar)
         Me.Panel1.Location = New System.Drawing.Point(-1, 1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(590, 27)
+        Me.Panel1.Size = New System.Drawing.Size(646, 27)
         Me.Panel1.TabIndex = 0
         '
         'btncerrar
         '
         Me.btncerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btncerrar.BackColor = System.Drawing.Color.Transparent
         Me.btncerrar.FlatAppearance.BorderSize = 0
         Me.btncerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btncerrar.Location = New System.Drawing.Point(560, 0)
+        Me.btncerrar.Location = New System.Drawing.Point(616, 0)
         Me.btncerrar.Name = "btncerrar"
         Me.btncerrar.Size = New System.Drawing.Size(27, 27)
         Me.btncerrar.TabIndex = 8
         Me.btncerrar.Text = "X"
-        Me.btncerrar.UseVisualStyleBackColor = True
+        Me.btncerrar.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(58, 70)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Location = New System.Drawing.Point(228, 107)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(43, 13)
         Me.Label1.TabIndex = 1
@@ -67,7 +70,8 @@ Partial Class login
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(58, 114)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Location = New System.Drawing.Point(228, 151)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(61, 13)
         Me.Label2.TabIndex = 2
@@ -75,7 +79,7 @@ Partial Class login
         '
         'txtusuario
         '
-        Me.txtusuario.Location = New System.Drawing.Point(145, 67)
+        Me.txtusuario.Location = New System.Drawing.Point(315, 104)
         Me.txtusuario.MaxLength = 30
         Me.txtusuario.Name = "txtusuario"
         Me.txtusuario.Size = New System.Drawing.Size(100, 20)
@@ -83,7 +87,7 @@ Partial Class login
         '
         'txtcontra
         '
-        Me.txtcontra.Location = New System.Drawing.Point(145, 111)
+        Me.txtcontra.Location = New System.Drawing.Point(315, 148)
         Me.txtcontra.MaxLength = 30
         Me.txtcontra.Name = "txtcontra"
         Me.txtcontra.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -95,7 +99,7 @@ Partial Class login
         Me.btningresar.BackColor = System.Drawing.Color.DarkOrange
         Me.btningresar.FlatAppearance.BorderSize = 0
         Me.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btningresar.Location = New System.Drawing.Point(71, 175)
+        Me.btningresar.Location = New System.Drawing.Point(218, 214)
         Me.btningresar.Name = "btningresar"
         Me.btningresar.Size = New System.Drawing.Size(75, 23)
         Me.btningresar.TabIndex = 6
@@ -107,7 +111,7 @@ Partial Class login
         Me.btncerrar2.BackColor = System.Drawing.Color.DarkOrange
         Me.btncerrar2.FlatAppearance.BorderSize = 0
         Me.btncerrar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btncerrar2.Location = New System.Drawing.Point(207, 175)
+        Me.btncerrar2.Location = New System.Drawing.Point(354, 214)
         Me.btncerrar2.Name = "btncerrar2"
         Me.btncerrar2.Size = New System.Drawing.Size(75, 23)
         Me.btncerrar2.TabIndex = 7
@@ -119,7 +123,8 @@ Partial Class login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PapayaWhip
-        Me.ClientSize = New System.Drawing.Size(586, 221)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(645, 344)
         Me.Controls.Add(Me.btncerrar2)
         Me.Controls.Add(Me.btningresar)
         Me.Controls.Add(Me.txtcontra)
