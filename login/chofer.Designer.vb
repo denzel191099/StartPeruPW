@@ -147,7 +147,7 @@ Partial Class chofer
         Me.btregistrar.FlatAppearance.BorderSize = 0
         Me.btregistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btregistrar.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btregistrar.ForeColor = System.Drawing.Color.AliceBlue
+        Me.btregistrar.ForeColor = System.Drawing.SystemColors.Window
         Me.btregistrar.Location = New System.Drawing.Point(128, 307)
         Me.btregistrar.Name = "btregistrar"
         Me.btregistrar.Size = New System.Drawing.Size(108, 45)
@@ -161,7 +161,7 @@ Partial Class chofer
         Me.btmodificar.FlatAppearance.BorderSize = 0
         Me.btmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btmodificar.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btmodificar.ForeColor = System.Drawing.Color.AliceBlue
+        Me.btmodificar.ForeColor = System.Drawing.SystemColors.Window
         Me.btmodificar.Location = New System.Drawing.Point(308, 307)
         Me.btmodificar.Name = "btmodificar"
         Me.btmodificar.Size = New System.Drawing.Size(108, 45)
@@ -175,7 +175,7 @@ Partial Class chofer
         Me.bteliminar.FlatAppearance.BorderSize = 0
         Me.bteliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bteliminar.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bteliminar.ForeColor = System.Drawing.Color.AliceBlue
+        Me.bteliminar.ForeColor = System.Drawing.SystemColors.Window
         Me.bteliminar.Location = New System.Drawing.Point(492, 307)
         Me.bteliminar.Name = "bteliminar"
         Me.bteliminar.Size = New System.Drawing.Size(108, 45)

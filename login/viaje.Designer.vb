@@ -42,13 +42,14 @@ Partial Class Viaje
         Me.btregistrar = New System.Windows.Forms.Button()
         Me.btmodificar = New System.Windows.Forms.Button()
         Me.bteliminar = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.dgviaje, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgviaje
         '
         Me.dgviaje.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgviaje.Location = New System.Drawing.Point(308, 12)
+        Me.dgviaje.Location = New System.Drawing.Point(310, 46)
         Me.dgviaje.Name = "dgviaje"
         Me.dgviaje.ReadOnly = True
         Me.dgviaje.Size = New System.Drawing.Size(386, 308)
@@ -57,7 +58,7 @@ Partial Class Viaje
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(69, 32)
+        Me.Label1.Location = New System.Drawing.Point(71, 49)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(43, 13)
         Me.Label1.TabIndex = 1
@@ -66,7 +67,7 @@ Partial Class Viaje
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(48, 70)
+        Me.Label2.Location = New System.Drawing.Point(50, 87)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(84, 13)
         Me.Label2.TabIndex = 2
@@ -74,7 +75,7 @@ Partial Class Viaje
         '
         'txtcodigoviaje
         '
-        Me.txtcodigoviaje.Location = New System.Drawing.Point(149, 29)
+        Me.txtcodigoviaje.Location = New System.Drawing.Point(151, 46)
         Me.txtcodigoviaje.MaxLength = 9
         Me.txtcodigoviaje.Name = "txtcodigoviaje"
         Me.txtcodigoviaje.Size = New System.Drawing.Size(100, 20)
@@ -85,7 +86,7 @@ Partial Class Viaje
         Me.cbsalida.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbsalida.FormattingEnabled = True
         Me.cbsalida.Items.AddRange(New Object() {"Lima"})
-        Me.cbsalida.Location = New System.Drawing.Point(149, 61)
+        Me.cbsalida.Location = New System.Drawing.Point(151, 78)
         Me.cbsalida.Name = "cbsalida"
         Me.cbsalida.Size = New System.Drawing.Size(100, 21)
         Me.cbsalida.TabIndex = 4
@@ -95,7 +96,7 @@ Partial Class Viaje
         Me.cbllegada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbllegada.FormattingEnabled = True
         Me.cbllegada.Items.AddRange(New Object() {"Ica", "Piura", "Pisco"})
-        Me.cbllegada.Location = New System.Drawing.Point(149, 105)
+        Me.cbllegada.Location = New System.Drawing.Point(151, 122)
         Me.cbllegada.Name = "cbllegada"
         Me.cbllegada.Size = New System.Drawing.Size(100, 21)
         Me.cbllegada.TabIndex = 5
@@ -103,7 +104,7 @@ Partial Class Viaje
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(48, 113)
+        Me.Label3.Location = New System.Drawing.Point(50, 130)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(93, 13)
         Me.Label3.TabIndex = 6
@@ -113,7 +114,7 @@ Partial Class Viaje
         '
         Me.dtpdate.CustomFormat = "yyyy-MM-dd"
         Me.dtpdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpdate.Location = New System.Drawing.Point(149, 157)
+        Me.dtpdate.Location = New System.Drawing.Point(151, 174)
         Me.dtpdate.Name = "dtpdate"
         Me.dtpdate.Size = New System.Drawing.Size(100, 20)
         Me.dtpdate.TabIndex = 7
@@ -121,7 +122,7 @@ Partial Class Viaje
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(69, 163)
+        Me.Label4.Location = New System.Drawing.Point(71, 180)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(40, 13)
         Me.Label4.TabIndex = 8
@@ -132,7 +133,7 @@ Partial Class Viaje
         Me.cbhora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbhora.FormattingEnabled = True
         Me.cbhora.Items.AddRange(New Object() {"13:00:00", "14:00:00", "15:00:00", "16:00:00", "17:00:00", "18:00:00", "19:00:00", "20:00:00", "21:00:00", "22:00:00", "23:00:00", "24:00:00"})
-        Me.cbhora.Location = New System.Drawing.Point(149, 200)
+        Me.cbhora.Location = New System.Drawing.Point(151, 217)
         Me.cbhora.Name = "cbhora"
         Me.cbhora.Size = New System.Drawing.Size(100, 21)
         Me.cbhora.TabIndex = 9
@@ -140,7 +141,7 @@ Partial Class Viaje
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(69, 203)
+        Me.Label5.Location = New System.Drawing.Point(71, 220)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(33, 13)
         Me.Label5.TabIndex = 10
@@ -148,7 +149,7 @@ Partial Class Viaje
         '
         'txtcosto
         '
-        Me.txtcosto.Location = New System.Drawing.Point(149, 247)
+        Me.txtcosto.Location = New System.Drawing.Point(151, 264)
         Me.txtcosto.MaxLength = 4
         Me.txtcosto.Name = "txtcosto"
         Me.txtcosto.Size = New System.Drawing.Size(100, 20)
@@ -159,7 +160,7 @@ Partial Class Viaje
         Me.cbauto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbauto.FormattingEnabled = True
         Me.cbauto.Items.AddRange(New Object() {"13:00:00", "14:00:00", "15:00:00", "16:00:00", "17:00:00", "18:00:00", "19:00:00", "20:00:00", "21:00:00", "22:00:00", "23:00:00", "24:00:00"})
-        Me.cbauto.Location = New System.Drawing.Point(149, 299)
+        Me.cbauto.Location = New System.Drawing.Point(151, 316)
         Me.cbauto.Name = "cbauto"
         Me.cbauto.Size = New System.Drawing.Size(100, 21)
         Me.cbauto.TabIndex = 12
@@ -169,7 +170,7 @@ Partial Class Viaje
         Me.cbchofer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbchofer.FormattingEnabled = True
         Me.cbchofer.Items.AddRange(New Object() {"13:00:00", "14:00:00", "15:00:00", "16:00:00", "17:00:00", "18:00:00", "19:00:00", "20:00:00", "21:00:00", "22:00:00", "23:00:00", "24:00:00"})
-        Me.cbchofer.Location = New System.Drawing.Point(149, 346)
+        Me.cbchofer.Location = New System.Drawing.Point(151, 363)
         Me.cbchofer.Name = "cbchofer"
         Me.cbchofer.Size = New System.Drawing.Size(100, 21)
         Me.cbchofer.TabIndex = 13
@@ -177,7 +178,7 @@ Partial Class Viaje
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(69, 250)
+        Me.Label6.Location = New System.Drawing.Point(71, 267)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(37, 13)
         Me.Label6.TabIndex = 14
@@ -186,7 +187,7 @@ Partial Class Viaje
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(48, 302)
+        Me.Label7.Location = New System.Drawing.Point(50, 319)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(85, 13)
         Me.Label7.TabIndex = 15
@@ -195,7 +196,7 @@ Partial Class Viaje
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(55, 349)
+        Me.Label8.Location = New System.Drawing.Point(57, 366)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(77, 13)
         Me.Label8.TabIndex = 16
@@ -203,36 +204,55 @@ Partial Class Viaje
         '
         'btregistrar
         '
-        Me.btregistrar.Location = New System.Drawing.Point(40, 398)
+        Me.btregistrar.FlatAppearance.BorderSize = 0
+        Me.btregistrar.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btregistrar.ForeColor = System.Drawing.SystemColors.Window
+        Me.btregistrar.Location = New System.Drawing.Point(190, 421)
         Me.btregistrar.Name = "btregistrar"
-        Me.btregistrar.Size = New System.Drawing.Size(75, 23)
+        Me.btregistrar.Size = New System.Drawing.Size(96, 36)
         Me.btregistrar.TabIndex = 17
         Me.btregistrar.Text = "Registrar"
         Me.btregistrar.UseVisualStyleBackColor = True
         '
         'btmodificar
         '
-        Me.btmodificar.Location = New System.Drawing.Point(149, 398)
+        Me.btmodificar.FlatAppearance.BorderSize = 0
+        Me.btmodificar.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btmodificar.ForeColor = System.Drawing.SystemColors.Window
+        Me.btmodificar.Location = New System.Drawing.Point(312, 421)
         Me.btmodificar.Name = "btmodificar"
-        Me.btmodificar.Size = New System.Drawing.Size(75, 23)
+        Me.btmodificar.Size = New System.Drawing.Size(96, 36)
         Me.btmodificar.TabIndex = 18
         Me.btmodificar.Text = "Modificar"
         Me.btmodificar.UseVisualStyleBackColor = True
         '
         'bteliminar
         '
-        Me.bteliminar.Location = New System.Drawing.Point(260, 398)
+        Me.bteliminar.FlatAppearance.BorderSize = 0
+        Me.bteliminar.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bteliminar.ForeColor = System.Drawing.SystemColors.Window
+        Me.bteliminar.Location = New System.Drawing.Point(435, 421)
         Me.bteliminar.Name = "bteliminar"
-        Me.bteliminar.Size = New System.Drawing.Size(75, 23)
+        Me.bteliminar.Size = New System.Drawing.Size(96, 36)
         Me.bteliminar.TabIndex = 19
         Me.bteliminar.Text = "Eliminar"
         Me.bteliminar.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Crimson
+        Me.Panel1.Location = New System.Drawing.Point(-1, -1)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(725, 33)
+        Me.Panel1.TabIndex = 20
         '
         'Viaje
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(704, 439)
+        Me.BackColor = System.Drawing.Color.LightCoral
+        Me.ClientSize = New System.Drawing.Size(723, 491)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.bteliminar)
         Me.Controls.Add(Me.btmodificar)
         Me.Controls.Add(Me.btregistrar)
@@ -253,7 +273,9 @@ Partial Class Viaje
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dgviaje)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Viaje"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "viaje"
         CType(Me.dgviaje, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -281,4 +303,5 @@ Partial Class Viaje
     Friend WithEvents btregistrar As Button
     Friend WithEvents btmodificar As Button
     Friend WithEvents bteliminar As Button
+    Friend WithEvents Panel1 As Panel
 End Class
