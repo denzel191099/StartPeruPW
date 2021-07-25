@@ -80,4 +80,8 @@ Public Class principal
     Private Sub Panelcabecera_Paint(sender As Object, e As PaintEventArgs) Handles Panelcabecera.Paint
 
     End Sub
+
+    Private Sub Panelcontenedor_Paint(sender As Object, e As PaintEventArgs) Handles Panelcontenedor.Paint
+
+    End Sub
 End Class
