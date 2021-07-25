@@ -132,6 +132,7 @@ Partial Class principal
         'BtnHorario
         '
         Me.BtnHorario.BackColor = System.Drawing.Color.Crimson
+        Me.BtnHorario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnHorario.FlatAppearance.BorderSize = 0
         Me.BtnHorario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
         Me.BtnHorario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
