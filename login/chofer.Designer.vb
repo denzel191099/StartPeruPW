@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class chofer
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class chofer
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.txtcodigochofer = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -36,7 +36,6 @@ Partial Class chofer
         Me.btregistrar = New System.Windows.Forms.Button()
         Me.btmodificar = New System.Windows.Forms.Button()
         Me.bteliminar = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.dgchofer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -183,21 +182,12 @@ Partial Class chofer
         Me.bteliminar.Text = "Eliminar"
         Me.bteliminar.UseVisualStyleBackColor = False
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Crimson
-        Me.Panel1.Location = New System.Drawing.Point(-1, -1)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(704, 33)
-        Me.Panel1.TabIndex = 14
-        '
         'chofer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightCoral
         Me.ClientSize = New System.Drawing.Size(702, 385)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.bteliminar)
         Me.Controls.Add(Me.btmodificar)
         Me.Controls.Add(Me.btregistrar)
@@ -235,5 +225,4 @@ Partial Class chofer
     Friend WithEvents btregistrar As Button
     Friend WithEvents btmodificar As Button
     Friend WithEvents bteliminar As Button
-    Friend WithEvents Panel1 As Panel
 End Class
