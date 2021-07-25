@@ -634,7 +634,7 @@ Public Class boleto
 
     End Sub
 
-    Private Sub btncerrar_boleto_Click(sender As Object, e As EventArgs) Handles btncerrar_boleto.Click
+    Private Sub btncerrar_boleto_Click(sender As Object, e As EventArgs)
         Close()
     End Sub
 End Class

@@ -59,10 +59,8 @@ Partial Class boleto
         Me.lbl10 = New System.Windows.Forms.Label()
         Me.Asientos = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btncerrar_boleto = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.dgboleto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Asientos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -135,7 +133,7 @@ Partial Class boleto
         Me.dgboleto.BackgroundColor = System.Drawing.Color.Cornsilk
         Me.dgboleto.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgboleto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgboleto.Location = New System.Drawing.Point(81, 391)
+        Me.dgboleto.Location = New System.Drawing.Point(81, 372)
         Me.dgboleto.Name = "dgboleto"
         Me.dgboleto.Size = New System.Drawing.Size(695, 376)
         Me.dgboleto.TabIndex = 6
@@ -274,7 +272,7 @@ Partial Class boleto
         'btn3
         '
         Me.btn3.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn3.Location = New System.Drawing.Point(898, 246)
+        Me.btn3.Location = New System.Drawing.Point(903, 182)
         Me.btn3.Name = "btn3"
         Me.btn3.Size = New System.Drawing.Size(26, 24)
         Me.btn3.TabIndex = 20
@@ -284,7 +282,7 @@ Partial Class boleto
         'btn4
         '
         Me.btn4.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn4.Location = New System.Drawing.Point(897, 296)
+        Me.btn4.Location = New System.Drawing.Point(902, 232)
         Me.btn4.Name = "btn4"
         Me.btn4.Size = New System.Drawing.Size(26, 24)
         Me.btn4.TabIndex = 21
@@ -298,7 +296,7 @@ Partial Class boleto
         Me.btnconfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnconfirmar.Image = CType(resources.GetObject("btnconfirmar.Image"), System.Drawing.Image)
         Me.btnconfirmar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnconfirmar.Location = New System.Drawing.Point(587, 773)
+        Me.btnconfirmar.Location = New System.Drawing.Point(587, 754)
         Me.btnconfirmar.Name = "btnconfirmar"
         Me.btnconfirmar.Size = New System.Drawing.Size(96, 39)
         Me.btnconfirmar.TabIndex = 23
@@ -313,7 +311,7 @@ Partial Class boleto
         Me.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btncerrar.Image = CType(resources.GetObject("btncerrar.Image"), System.Drawing.Image)
         Me.btncerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btncerrar.Location = New System.Drawing.Point(689, 773)
+        Me.btncerrar.Location = New System.Drawing.Point(689, 754)
         Me.btncerrar.Name = "btncerrar"
         Me.btncerrar.Size = New System.Drawing.Size(87, 39)
         Me.btncerrar.TabIndex = 24
@@ -324,7 +322,7 @@ Partial Class boleto
         'btn2
         '
         Me.btn2.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn2.Location = New System.Drawing.Point(897, 193)
+        Me.btn2.Location = New System.Drawing.Point(902, 129)
         Me.btn2.Name = "btn2"
         Me.btn2.Size = New System.Drawing.Size(26, 24)
         Me.btn2.TabIndex = 25
@@ -334,7 +332,7 @@ Partial Class boleto
         'btn1
         '
         Me.btn1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn1.Location = New System.Drawing.Point(898, 143)
+        Me.btn1.Location = New System.Drawing.Point(903, 79)
         Me.btn1.Name = "btn1"
         Me.btn1.Size = New System.Drawing.Size(25, 25)
         Me.btn1.TabIndex = 26
@@ -344,7 +342,7 @@ Partial Class boleto
         'btn6
         '
         Me.btn6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn6.Location = New System.Drawing.Point(947, 144)
+        Me.btn6.Location = New System.Drawing.Point(952, 80)
         Me.btn6.Name = "btn6"
         Me.btn6.Size = New System.Drawing.Size(26, 24)
         Me.btn6.TabIndex = 31
@@ -354,7 +352,7 @@ Partial Class boleto
         'btn7
         '
         Me.btn7.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn7.Location = New System.Drawing.Point(947, 193)
+        Me.btn7.Location = New System.Drawing.Point(952, 129)
         Me.btn7.Name = "btn7"
         Me.btn7.Size = New System.Drawing.Size(26, 24)
         Me.btn7.TabIndex = 30
@@ -364,7 +362,7 @@ Partial Class boleto
         'btn10
         '
         Me.btn10.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn10.Location = New System.Drawing.Point(947, 345)
+        Me.btn10.Location = New System.Drawing.Point(952, 281)
         Me.btn10.Name = "btn10"
         Me.btn10.Size = New System.Drawing.Size(26, 24)
         Me.btn10.TabIndex = 29
@@ -374,7 +372,7 @@ Partial Class boleto
         'btn9
         '
         Me.btn9.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn9.Location = New System.Drawing.Point(947, 296)
+        Me.btn9.Location = New System.Drawing.Point(952, 232)
         Me.btn9.Name = "btn9"
         Me.btn9.Size = New System.Drawing.Size(26, 24)
         Me.btn9.TabIndex = 28
@@ -385,7 +383,7 @@ Partial Class boleto
         '
         Me.btn8.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btn8.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn8.Location = New System.Drawing.Point(947, 246)
+        Me.btn8.Location = New System.Drawing.Point(952, 182)
         Me.btn8.Name = "btn8"
         Me.btn8.Size = New System.Drawing.Size(26, 24)
         Me.btn8.TabIndex = 27
@@ -416,7 +414,7 @@ Partial Class boleto
         'btn5
         '
         Me.btn5.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn5.Location = New System.Drawing.Point(898, 345)
+        Me.btn5.Location = New System.Drawing.Point(903, 281)
         Me.btn5.Name = "btn5"
         Me.btn5.Size = New System.Drawing.Size(26, 24)
         Me.btn5.TabIndex = 22
@@ -440,7 +438,7 @@ Partial Class boleto
         Me.Asientos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Asientos.Enabled = False
         Me.Asientos.InitialImage = CType(resources.GetObject("Asientos.InitialImage"), System.Drawing.Image)
-        Me.Asientos.Location = New System.Drawing.Point(818, 103)
+        Me.Asientos.Location = New System.Drawing.Point(823, 39)
         Me.Asientos.Name = "Asientos"
         Me.Asientos.Size = New System.Drawing.Size(330, 709)
         Me.Asientos.TabIndex = 35
@@ -451,27 +449,11 @@ Partial Class boleto
         Me.Panel1.BackColor = System.Drawing.Color.Crimson
         Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.btncerrar_boleto)
         Me.Panel1.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.Panel1.Location = New System.Drawing.Point(-13, -3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1207, 24)
+        Me.Panel1.Size = New System.Drawing.Size(1323, 24)
         Me.Panel1.TabIndex = 36
-        '
-        'btncerrar_boleto
-        '
-        Me.btncerrar_boleto.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btncerrar_boleto.BackColor = System.Drawing.Color.Transparent
-        Me.btncerrar_boleto.FlatAppearance.BorderSize = 0
-        Me.btncerrar_boleto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btncerrar_boleto.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btncerrar_boleto.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btncerrar_boleto.Location = New System.Drawing.Point(1173, 0)
-        Me.btncerrar_boleto.Name = "btncerrar_boleto"
-        Me.btncerrar_boleto.Size = New System.Drawing.Size(32, 24)
-        Me.btncerrar_boleto.TabIndex = 8
-        Me.btncerrar_boleto.Text = "X"
-        Me.btncerrar_boleto.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -492,18 +474,6 @@ Partial Class boleto
         Me.Label10.TabIndex = 10
         Me.Label10.Text = "Boleto"
         '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.Cornsilk
-        Me.Label11.Location = New System.Drawing.Point(831, 45)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(312, 37)
-        Me.Label11.TabIndex = 37
-        Me.Label11.Text = "ELEGIR ASIENTOS:"
-        '
         'boleto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -512,7 +482,6 @@ Partial Class boleto
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1188, 844)
-        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.lbl10)
         Me.Controls.Add(Me.Label9)
@@ -587,7 +556,6 @@ Partial Class boleto
     Friend WithEvents btn5 As Button
     Friend WithEvents Asientos As PictureBox
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents btncerrar_boleto As Button
     Friend WithEvents Label10 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Public WithEvents Label4 As Label
@@ -602,5 +570,4 @@ Partial Class boleto
     Public WithEvents lbl6 As Label
     Public WithEvents lbl10 As Label
     Public WithEvents cbcodigo As ComboBox
-    Friend WithEvents Label11 As Label
 End Class

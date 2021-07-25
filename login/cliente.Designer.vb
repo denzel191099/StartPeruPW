@@ -40,13 +40,18 @@ Partial Class cliente
         Me.btnclientemodificar = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtcodigocliente = New System.Windows.Forms.TextBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.dgcliente, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(59, 200)
+        Me.Label4.Location = New System.Drawing.Point(125, 280)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(86, 13)
         Me.Label4.TabIndex = 16
@@ -54,7 +59,7 @@ Partial Class cliente
         '
         'txtapmcliente
         '
-        Me.txtapmcliente.Location = New System.Drawing.Point(159, 197)
+        Me.txtapmcliente.Location = New System.Drawing.Point(225, 277)
         Me.txtapmcliente.MaxLength = 25
         Me.txtapmcliente.Name = "txtapmcliente"
         Me.txtapmcliente.Size = New System.Drawing.Size(100, 20)
@@ -63,7 +68,7 @@ Partial Class cliente
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(59, 150)
+        Me.Label3.Location = New System.Drawing.Point(125, 230)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(84, 13)
         Me.Label3.TabIndex = 14
@@ -71,7 +76,7 @@ Partial Class cliente
         '
         'txtappcliente
         '
-        Me.txtappcliente.Location = New System.Drawing.Point(159, 147)
+        Me.txtappcliente.Location = New System.Drawing.Point(225, 227)
         Me.txtappcliente.MaxLength = 25
         Me.txtappcliente.Name = "txtappcliente"
         Me.txtappcliente.Size = New System.Drawing.Size(100, 20)
@@ -80,7 +85,7 @@ Partial Class cliente
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(59, 107)
+        Me.Label2.Location = New System.Drawing.Point(125, 187)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(47, 13)
         Me.Label2.TabIndex = 12
@@ -88,7 +93,7 @@ Partial Class cliente
         '
         'txtnomcliente
         '
-        Me.txtnomcliente.Location = New System.Drawing.Point(159, 104)
+        Me.txtnomcliente.Location = New System.Drawing.Point(225, 184)
         Me.txtnomcliente.MaxLength = 25
         Me.txtnomcliente.Name = "txtnomcliente"
         Me.txtnomcliente.Size = New System.Drawing.Size(100, 20)
@@ -97,7 +102,7 @@ Partial Class cliente
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(59, 66)
+        Me.Label1.Location = New System.Drawing.Point(125, 146)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(29, 13)
         Me.Label1.TabIndex = 10
@@ -105,7 +110,7 @@ Partial Class cliente
         '
         'txtdnicliente
         '
-        Me.txtdnicliente.Location = New System.Drawing.Point(159, 63)
+        Me.txtdnicliente.Location = New System.Drawing.Point(225, 143)
         Me.txtdnicliente.MaxLength = 9
         Me.txtdnicliente.Name = "txtdnicliente"
         Me.txtdnicliente.Size = New System.Drawing.Size(100, 20)
@@ -114,15 +119,15 @@ Partial Class cliente
         'dgcliente
         '
         Me.dgcliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgcliente.Location = New System.Drawing.Point(331, 53)
+        Me.dgcliente.Location = New System.Drawing.Point(390, 75)
         Me.dgcliente.Name = "dgcliente"
         Me.dgcliente.ReadOnly = True
-        Me.dgcliente.Size = New System.Drawing.Size(380, 209)
+        Me.dgcliente.Size = New System.Drawing.Size(654, 423)
         Me.dgcliente.TabIndex = 17
         '
         'txtcel
         '
-        Me.txtcel.Location = New System.Drawing.Point(159, 243)
+        Me.txtcel.Location = New System.Drawing.Point(225, 323)
         Me.txtcel.Name = "txtcel"
         Me.txtcel.Size = New System.Drawing.Size(100, 20)
         Me.txtcel.TabIndex = 18
@@ -130,7 +135,7 @@ Partial Class cliente
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(62, 249)
+        Me.Label5.Location = New System.Drawing.Point(128, 329)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(42, 13)
         Me.Label5.TabIndex = 19
@@ -139,7 +144,7 @@ Partial Class cliente
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(62, 298)
+        Me.Label6.Location = New System.Drawing.Point(128, 378)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(41, 13)
         Me.Label6.TabIndex = 21
@@ -147,14 +152,14 @@ Partial Class cliente
         '
         'txtcorreocliente
         '
-        Me.txtcorreocliente.Location = New System.Drawing.Point(159, 292)
+        Me.txtcorreocliente.Location = New System.Drawing.Point(225, 372)
         Me.txtcorreocliente.Name = "txtcorreocliente"
         Me.txtcorreocliente.Size = New System.Drawing.Size(100, 20)
         Me.txtcorreocliente.TabIndex = 20
         '
         'btninsertarcliente
         '
-        Me.btninsertarcliente.Location = New System.Drawing.Point(104, 347)
+        Me.btninsertarcliente.Location = New System.Drawing.Point(170, 427)
         Me.btninsertarcliente.Name = "btninsertarcliente"
         Me.btninsertarcliente.Size = New System.Drawing.Size(75, 23)
         Me.btninsertarcliente.TabIndex = 22
@@ -163,7 +168,7 @@ Partial Class cliente
         '
         'btnclientemodificar
         '
-        Me.btnclientemodificar.Location = New System.Drawing.Point(219, 347)
+        Me.btnclientemodificar.Location = New System.Drawing.Point(285, 427)
         Me.btnclientemodificar.Name = "btnclientemodificar"
         Me.btnclientemodificar.Size = New System.Drawing.Size(75, 23)
         Me.btnclientemodificar.TabIndex = 23
@@ -173,7 +178,7 @@ Partial Class cliente
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(59, 21)
+        Me.Label7.Location = New System.Drawing.Point(125, 101)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(43, 13)
         Me.Label7.TabIndex = 25
@@ -181,18 +186,49 @@ Partial Class cliente
         '
         'txtcodigocliente
         '
-        Me.txtcodigocliente.Location = New System.Drawing.Point(159, 18)
+        Me.txtcodigocliente.Location = New System.Drawing.Point(225, 98)
         Me.txtcodigocliente.MaxLength = 9
         Me.txtcodigocliente.Name = "txtcodigocliente"
         Me.txtcodigocliente.Size = New System.Drawing.Size(100, 20)
         Me.txtcodigocliente.TabIndex = 24
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Location = New System.Drawing.Point(-3, -1)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1275, 23)
+        Me.Panel1.TabIndex = 26
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PictureBox1.Location = New System.Drawing.Point(7, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(20, 19)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(27, 6)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(39, 13)
+        Me.Label8.TabIndex = 1
+        Me.Label8.Text = "Cliente"
         '
         'cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(759, 427)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(1082, 632)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txtcodigocliente)
         Me.Controls.Add(Me.btnclientemodificar)
@@ -210,9 +246,14 @@ Partial Class cliente
         Me.Controls.Add(Me.txtnomcliente)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtdnicliente)
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "cliente"
         Me.Text = "cliente"
         CType(Me.dgcliente, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -235,4 +276,7 @@ Partial Class cliente
     Friend WithEvents btnclientemodificar As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents txtcodigocliente As TextBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label8 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
