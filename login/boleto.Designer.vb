@@ -62,6 +62,7 @@ Partial Class boleto
         Me.btncerrar_boleto = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.dgboleto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Asientos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -111,7 +112,7 @@ Partial Class boleto
         '
         'txtllegada
         '
-        Me.txtllegada.Location = New System.Drawing.Point(203, 130)
+        Me.txtllegada.Location = New System.Drawing.Point(427, 95)
         Me.txtllegada.MaxLength = 15
         Me.txtllegada.Name = "txtllegada"
         Me.txtllegada.Size = New System.Drawing.Size(100, 20)
@@ -123,7 +124,7 @@ Partial Class boleto
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Cornsilk
-        Me.Label3.Location = New System.Drawing.Point(78, 130)
+        Me.Label3.Location = New System.Drawing.Point(340, 95)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(70, 20)
         Me.Label3.TabIndex = 4
@@ -395,20 +396,20 @@ Partial Class boleto
         '
         Me.cbasiento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbasiento.FormattingEnabled = True
-        Me.cbasiento.Location = New System.Drawing.Point(203, 361)
+        Me.cbasiento.Location = New System.Drawing.Point(427, 55)
         Me.cbasiento.Name = "cbasiento"
-        Me.cbasiento.Size = New System.Drawing.Size(95, 21)
+        Me.cbasiento.Size = New System.Drawing.Size(100, 21)
         Me.cbasiento.TabIndex = 32
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Cornsilk
-        Me.Label9.Location = New System.Drawing.Point(101, 360)
+        Me.Label9.Location = New System.Drawing.Point(341, 58)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(69, 18)
+        Me.Label9.Size = New System.Drawing.Size(67, 20)
         Me.Label9.TabIndex = 33
         Me.Label9.Text = "Asiento:"
         '
@@ -491,13 +492,27 @@ Partial Class boleto
         Me.Label10.TabIndex = 10
         Me.Label10.Text = "Boleto"
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Cornsilk
+        Me.Label11.Location = New System.Drawing.Point(831, 45)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(312, 37)
+        Me.Label11.TabIndex = 37
+        Me.Label11.Text = "ELEGIR ASIENTOS:"
+        '
         'boleto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1188, 844)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.lbl10)
         Me.Controls.Add(Me.Label9)
@@ -548,8 +563,6 @@ Partial Class boleto
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents cbcodigo As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents txtpartida As TextBox
@@ -588,4 +601,6 @@ Partial Class boleto
     Public WithEvents LB5 As Label
     Public WithEvents lbl6 As Label
     Public WithEvents lbl10 As Label
+    Public WithEvents cbcodigo As ComboBox
+    Friend WithEvents Label11 As Label
 End Class
