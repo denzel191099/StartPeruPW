@@ -42,7 +42,7 @@ Partial Class principal
         '
         'Panelcabecera
         '
-        Me.Panelcabecera.BackColor = System.Drawing.SystemColors.Control
+        Me.Panelcabecera.BackColor = System.Drawing.Color.Crimson
         Me.Panelcabecera.Controls.Add(Me.Button1)
         Me.Panelcabecera.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panelcabecera.Location = New System.Drawing.Point(0, 0)
@@ -65,7 +65,7 @@ Partial Class principal
         '
         'Panelmenu
         '
-        Me.Panelmenu.BackColor = System.Drawing.Color.Goldenrod
+        Me.Panelmenu.BackColor = System.Drawing.Color.LightCoral
         Me.Panelmenu.Controls.Add(Me.btngestioncliente)
         Me.Panelmenu.Controls.Add(Me.btnboleto)
         Me.Panelmenu.Controls.Add(Me.BtnHorario)
@@ -82,15 +82,15 @@ Partial Class principal
         Me.btngestioncliente.FlatAppearance.BorderSize = 0
         Me.btngestioncliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
         Me.btngestioncliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btngestioncliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btngestioncliente.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btngestioncliente.ForeColor = System.Drawing.SystemColors.Window
         Me.btngestioncliente.Image = Global.login.My.Resources.Resources.chofer3
         Me.btngestioncliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btngestioncliente.Location = New System.Drawing.Point(-3, 333)
         Me.btngestioncliente.Name = "btngestioncliente"
         Me.btngestioncliente.Size = New System.Drawing.Size(223, 67)
         Me.btngestioncliente.TabIndex = 5
-        Me.btngestioncliente.Text = "Gestionar Clientes"
-        Me.btngestioncliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btngestioncliente.Text = "Clientes"
         Me.btngestioncliente.UseVisualStyleBackColor = True
         '
         'btnboleto
@@ -99,15 +99,15 @@ Partial Class principal
         Me.btnboleto.FlatAppearance.BorderSize = 0
         Me.btnboleto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
         Me.btnboleto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnboleto.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnboleto.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnboleto.ForeColor = System.Drawing.SystemColors.Window
         Me.btnboleto.Image = Global.login.My.Resources.Resources.chofer3
         Me.btnboleto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnboleto.Location = New System.Drawing.Point(0, 260)
         Me.btnboleto.Name = "btnboleto"
         Me.btnboleto.Size = New System.Drawing.Size(223, 67)
         Me.btnboleto.TabIndex = 4
-        Me.btnboleto.Text = "Interfaz de Pasajes"
-        Me.btnboleto.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnboleto.Text = "Pasajes"
         Me.btnboleto.UseVisualStyleBackColor = True
         '
         'BtnHorario
@@ -115,15 +115,15 @@ Partial Class principal
         Me.BtnHorario.FlatAppearance.BorderSize = 0
         Me.BtnHorario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
         Me.BtnHorario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnHorario.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnHorario.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnHorario.ForeColor = System.Drawing.SystemColors.Window
         Me.BtnHorario.Image = Global.login.My.Resources.Resources.chofer3
         Me.BtnHorario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BtnHorario.Location = New System.Drawing.Point(0, 172)
         Me.BtnHorario.Name = "BtnHorario"
         Me.BtnHorario.Size = New System.Drawing.Size(220, 67)
         Me.BtnHorario.TabIndex = 3
-        Me.BtnHorario.Text = "Horario de Viajes "
-        Me.BtnHorario.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BtnHorario.Text = "Viajes "
         Me.BtnHorario.UseVisualStyleBackColor = True
         '
         'btnchofer
@@ -131,7 +131,8 @@ Partial Class principal
         Me.btnchofer.FlatAppearance.BorderSize = 0
         Me.btnchofer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
         Me.btnchofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnchofer.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnchofer.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnchofer.ForeColor = System.Drawing.SystemColors.Window
         Me.btnchofer.Image = Global.login.My.Resources.Resources.chofer3
         Me.btnchofer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnchofer.Location = New System.Drawing.Point(0, 88)
