@@ -42,7 +42,7 @@ Partial Class principal
         '
         'Panelcabecera
         '
-        Me.Panelcabecera.BackColor = System.Drawing.Color.Chocolate
+        Me.Panelcabecera.BackColor = System.Drawing.SystemColors.Control
         Me.Panelcabecera.Controls.Add(Me.Button1)
         Me.Panelcabecera.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panelcabecera.Location = New System.Drawing.Point(0, 0)
