@@ -52,7 +52,7 @@ Partial Class chofer
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(41, 57)
+        Me.Label1.Location = New System.Drawing.Point(28, 57)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 16)
         Me.Label1.TabIndex = 1
@@ -61,7 +61,7 @@ Partial Class chofer
         'dgchofer
         '
         Me.dgchofer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgchofer.Location = New System.Drawing.Point(310, 49)
+        Me.dgchofer.Location = New System.Drawing.Point(308, 53)
         Me.dgchofer.Name = "dgchofer"
         Me.dgchofer.ReadOnly = True
         Me.dgchofer.Size = New System.Drawing.Size(380, 209)
@@ -71,7 +71,7 @@ Partial Class chofer
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(41, 103)
+        Me.Label2.Location = New System.Drawing.Point(28, 102)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(55, 16)
         Me.Label2.TabIndex = 4
@@ -79,7 +79,7 @@ Partial Class chofer
         '
         'txtnomchofer
         '
-        Me.txtnomchofer.Location = New System.Drawing.Point(141, 99)
+        Me.txtnomchofer.Location = New System.Drawing.Point(141, 98)
         Me.txtnomchofer.MaxLength = 25
         Me.txtnomchofer.Name = "txtnomchofer"
         Me.txtnomchofer.Size = New System.Drawing.Size(100, 20)
@@ -89,15 +89,15 @@ Partial Class chofer
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(41, 145)
+        Me.Label3.Location = New System.Drawing.Point(28, 150)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(94, 16)
+        Me.Label3.Size = New System.Drawing.Size(99, 16)
         Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Apellido Paterno"
+        Me.Label3.Text = "Apellido Paterno:"
         '
         'txtappchofer
         '
-        Me.txtappchofer.Location = New System.Drawing.Point(141, 141)
+        Me.txtappchofer.Location = New System.Drawing.Point(141, 146)
         Me.txtappchofer.MaxLength = 25
         Me.txtappchofer.Name = "txtappchofer"
         Me.txtappchofer.Size = New System.Drawing.Size(100, 20)
@@ -107,15 +107,15 @@ Partial Class chofer
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(41, 196)
+        Me.Label4.Location = New System.Drawing.Point(28, 198)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(99, 16)
+        Me.Label4.Size = New System.Drawing.Size(104, 16)
         Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Apellido Materno"
+        Me.Label4.Text = "Apellido Materno:"
         '
         'txtapmchofer
         '
-        Me.txtapmchofer.Location = New System.Drawing.Point(141, 192)
+        Me.txtapmchofer.Location = New System.Drawing.Point(141, 194)
         Me.txtapmchofer.MaxLength = 25
         Me.txtapmchofer.Name = "txtapmchofer"
         Me.txtapmchofer.Size = New System.Drawing.Size(100, 20)
@@ -125,55 +125,70 @@ Partial Class chofer
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(41, 250)
+        Me.Label5.Location = New System.Drawing.Point(28, 246)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(50, 16)
+        Me.Label5.Size = New System.Drawing.Size(55, 16)
         Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Licencia"
+        Me.Label5.Text = "Licencia:"
         '
         'cblicencia
         '
         Me.cblicencia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cblicencia.FormattingEnabled = True
         Me.cblicencia.Items.AddRange(New Object() {"A-IIIa", "A-IIIb"})
-        Me.cblicencia.Location = New System.Drawing.Point(141, 245)
+        Me.cblicencia.Location = New System.Drawing.Point(141, 241)
         Me.cblicencia.Name = "cblicencia"
         Me.cblicencia.Size = New System.Drawing.Size(100, 21)
         Me.cblicencia.TabIndex = 10
         '
         'btregistrar
         '
-        Me.btregistrar.Location = New System.Drawing.Point(44, 317)
+        Me.btregistrar.BackColor = System.Drawing.Color.Crimson
+        Me.btregistrar.FlatAppearance.BorderSize = 0
+        Me.btregistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btregistrar.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btregistrar.ForeColor = System.Drawing.Color.AliceBlue
+        Me.btregistrar.Location = New System.Drawing.Point(128, 307)
         Me.btregistrar.Name = "btregistrar"
-        Me.btregistrar.Size = New System.Drawing.Size(75, 23)
+        Me.btregistrar.Size = New System.Drawing.Size(108, 45)
         Me.btregistrar.TabIndex = 11
         Me.btregistrar.Text = "Registrar "
-        Me.btregistrar.UseVisualStyleBackColor = True
+        Me.btregistrar.UseVisualStyleBackColor = False
         '
         'btmodificar
         '
-        Me.btmodificar.Location = New System.Drawing.Point(150, 317)
+        Me.btmodificar.BackColor = System.Drawing.Color.Crimson
+        Me.btmodificar.FlatAppearance.BorderSize = 0
+        Me.btmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btmodificar.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btmodificar.ForeColor = System.Drawing.Color.AliceBlue
+        Me.btmodificar.Location = New System.Drawing.Point(308, 307)
         Me.btmodificar.Name = "btmodificar"
-        Me.btmodificar.Size = New System.Drawing.Size(75, 23)
+        Me.btmodificar.Size = New System.Drawing.Size(108, 45)
         Me.btmodificar.TabIndex = 12
         Me.btmodificar.Text = "Modificar"
-        Me.btmodificar.UseVisualStyleBackColor = True
+        Me.btmodificar.UseVisualStyleBackColor = False
         '
         'bteliminar
         '
-        Me.bteliminar.Location = New System.Drawing.Point(258, 317)
+        Me.bteliminar.BackColor = System.Drawing.Color.Crimson
+        Me.bteliminar.FlatAppearance.BorderSize = 0
+        Me.bteliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bteliminar.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bteliminar.ForeColor = System.Drawing.Color.AliceBlue
+        Me.bteliminar.Location = New System.Drawing.Point(492, 307)
         Me.bteliminar.Name = "bteliminar"
-        Me.bteliminar.Size = New System.Drawing.Size(75, 23)
+        Me.bteliminar.Size = New System.Drawing.Size(108, 45)
         Me.bteliminar.TabIndex = 13
         Me.bteliminar.Text = "Eliminar"
-        Me.bteliminar.UseVisualStyleBackColor = True
+        Me.bteliminar.UseVisualStyleBackColor = False
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Crimson
         Me.Panel1.Location = New System.Drawing.Point(-1, -1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(703, 44)
+        Me.Panel1.Size = New System.Drawing.Size(704, 33)
         Me.Panel1.TabIndex = 14
         '
         'chofer
