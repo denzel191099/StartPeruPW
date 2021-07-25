@@ -633,4 +633,8 @@ Public Class boleto
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
+
+    Private Sub btncerrar_boleto_Click(sender As Object, e As EventArgs) Handles btncerrar_boleto.Click
+        Close()
+    End Sub
 End Class

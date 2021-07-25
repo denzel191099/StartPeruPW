@@ -28,9 +28,9 @@ Partial Class principal
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panelmenu = New System.Windows.Forms.Panel()
         Me.btngestioncliente = New System.Windows.Forms.Button()
+        Me.btnchofer = New System.Windows.Forms.Button()
         Me.btnboleto = New System.Windows.Forms.Button()
         Me.BtnHorario = New System.Windows.Forms.Button()
-        Me.btnchofer = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.timerocultaremenu = New System.Windows.Forms.Timer(Me.components)
         Me.timemostrarmenu = New System.Windows.Forms.Timer(Me.components)
@@ -94,6 +94,23 @@ Partial Class principal
         Me.btngestioncliente.Text = "Clientes"
         Me.btngestioncliente.UseVisualStyleBackColor = False
         '
+        'btnchofer
+        '
+        Me.btnchofer.BackColor = System.Drawing.Color.Crimson
+        Me.btnchofer.FlatAppearance.BorderSize = 0
+        Me.btnchofer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
+        Me.btnchofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnchofer.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnchofer.ForeColor = System.Drawing.SystemColors.Window
+        Me.btnchofer.Image = Global.login.My.Resources.Resources.chofer3
+        Me.btnchofer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnchofer.Location = New System.Drawing.Point(12, 73)
+        Me.btnchofer.Name = "btnchofer"
+        Me.btnchofer.Size = New System.Drawing.Size(190, 60)
+        Me.btnchofer.TabIndex = 1
+        Me.btnchofer.Text = "Pilotos"
+        Me.btnchofer.UseVisualStyleBackColor = False
+        '
         'btnboleto
         '
         Me.btnboleto.BackColor = System.Drawing.Color.Crimson
@@ -128,23 +145,6 @@ Partial Class principal
         Me.BtnHorario.TabIndex = 3
         Me.BtnHorario.Text = "Viajes "
         Me.BtnHorario.UseVisualStyleBackColor = False
-        '
-        'btnchofer
-        '
-        Me.btnchofer.BackColor = System.Drawing.Color.Crimson
-        Me.btnchofer.FlatAppearance.BorderSize = 0
-        Me.btnchofer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
-        Me.btnchofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnchofer.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnchofer.ForeColor = System.Drawing.SystemColors.Window
-        Me.btnchofer.Image = Global.login.My.Resources.Resources.chofer3
-        Me.btnchofer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnchofer.Location = New System.Drawing.Point(12, 73)
-        Me.btnchofer.Name = "btnchofer"
-        Me.btnchofer.Size = New System.Drawing.Size(190, 60)
-        Me.btnchofer.TabIndex = 1
-        Me.btnchofer.Text = "Pilotos"
-        Me.btnchofer.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
