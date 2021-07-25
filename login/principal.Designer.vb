@@ -47,7 +47,7 @@ Partial Class principal
         Me.Panelcabecera.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panelcabecera.Location = New System.Drawing.Point(0, 0)
         Me.Panelcabecera.Name = "Panelcabecera"
-        Me.Panelcabecera.Size = New System.Drawing.Size(838, 40)
+        Me.Panelcabecera.Size = New System.Drawing.Size(1150, 40)
         Me.Panelcabecera.TabIndex = 0
         '
         'Button1
@@ -56,7 +56,7 @@ Partial Class principal
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(798, 3)
+        Me.Button1.Location = New System.Drawing.Point(1110, 0)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(40, 40)
         Me.Button1.TabIndex = 0
@@ -74,7 +74,7 @@ Partial Class principal
         Me.Panelmenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panelmenu.Location = New System.Drawing.Point(0, 40)
         Me.Panelmenu.Name = "Panelmenu"
-        Me.Panelmenu.Size = New System.Drawing.Size(220, 424)
+        Me.Panelmenu.Size = New System.Drawing.Size(220, 748)
         Me.Panelmenu.TabIndex = 1
         '
         'btngestioncliente
@@ -167,17 +167,18 @@ Partial Class principal
         'Panelcontenedor
         '
         Me.Panelcontenedor.BackgroundImage = CType(resources.GetObject("Panelcontenedor.BackgroundImage"), System.Drawing.Image)
+        Me.Panelcontenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panelcontenedor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panelcontenedor.Location = New System.Drawing.Point(220, 40)
         Me.Panelcontenedor.Name = "Panelcontenedor"
-        Me.Panelcontenedor.Size = New System.Drawing.Size(618, 424)
+        Me.Panelcontenedor.Size = New System.Drawing.Size(930, 748)
         Me.Panelcontenedor.TabIndex = 2
         '
         'principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(838, 464)
+        Me.ClientSize = New System.Drawing.Size(1150, 788)
         Me.Controls.Add(Me.Panelcontenedor)
         Me.Controls.Add(Me.Panelmenu)
         Me.Controls.Add(Me.Panelcabecera)

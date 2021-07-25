@@ -13,12 +13,10 @@
     <AssemblyName>AI Setup Project1</AssemblyName>
     <Name>AI Setup Project1</Name>
     <RootNamespace>AI Setup Project1</RootNamespace>
-    <LoadFromTemplate>True</LoadFromTemplate>
+    <LoadFromTemplate>
+    </LoadFromTemplate>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'All' ">
-    <DebugSymbols>false</DebugSymbols>
-    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
-  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DefaultBuild' " />
   <ItemGroup>
     <Compile Include="AI Setup Project1.aip">
       <SubType>Code</SubType>
