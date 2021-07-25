@@ -67,9 +67,9 @@ Partial Class principal
         '
         Me.Panelmenu.BackColor = System.Drawing.Color.LightCoral
         Me.Panelmenu.Controls.Add(Me.btngestioncliente)
+        Me.Panelmenu.Controls.Add(Me.btnchofer)
         Me.Panelmenu.Controls.Add(Me.btnboleto)
         Me.Panelmenu.Controls.Add(Me.BtnHorario)
-        Me.Panelmenu.Controls.Add(Me.btnchofer)
         Me.Panelmenu.Controls.Add(Me.PictureBox1)
         Me.Panelmenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panelmenu.Location = New System.Drawing.Point(0, 40)
@@ -79,6 +79,7 @@ Partial Class principal
         '
         'btngestioncliente
         '
+        Me.btngestioncliente.BackColor = System.Drawing.Color.Crimson
         Me.btngestioncliente.FlatAppearance.BorderSize = 0
         Me.btngestioncliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
         Me.btngestioncliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -86,15 +87,16 @@ Partial Class principal
         Me.btngestioncliente.ForeColor = System.Drawing.SystemColors.Window
         Me.btngestioncliente.Image = Global.login.My.Resources.Resources.chofer3
         Me.btngestioncliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btngestioncliente.Location = New System.Drawing.Point(-3, 333)
+        Me.btngestioncliente.Location = New System.Drawing.Point(12, 315)
         Me.btngestioncliente.Name = "btngestioncliente"
-        Me.btngestioncliente.Size = New System.Drawing.Size(223, 67)
+        Me.btngestioncliente.Size = New System.Drawing.Size(190, 60)
         Me.btngestioncliente.TabIndex = 5
         Me.btngestioncliente.Text = "Clientes"
-        Me.btngestioncliente.UseVisualStyleBackColor = True
+        Me.btngestioncliente.UseVisualStyleBackColor = False
         '
         'btnboleto
         '
+        Me.btnboleto.BackColor = System.Drawing.Color.Crimson
         Me.btnboleto.Enabled = False
         Me.btnboleto.FlatAppearance.BorderSize = 0
         Me.btnboleto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
@@ -103,15 +105,16 @@ Partial Class principal
         Me.btnboleto.ForeColor = System.Drawing.SystemColors.Window
         Me.btnboleto.Image = Global.login.My.Resources.Resources.chofer3
         Me.btnboleto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnboleto.Location = New System.Drawing.Point(0, 260)
+        Me.btnboleto.Location = New System.Drawing.Point(12, 235)
         Me.btnboleto.Name = "btnboleto"
-        Me.btnboleto.Size = New System.Drawing.Size(223, 67)
+        Me.btnboleto.Size = New System.Drawing.Size(190, 60)
         Me.btnboleto.TabIndex = 4
         Me.btnboleto.Text = "Pasajes"
-        Me.btnboleto.UseVisualStyleBackColor = True
+        Me.btnboleto.UseVisualStyleBackColor = False
         '
         'BtnHorario
         '
+        Me.BtnHorario.BackColor = System.Drawing.Color.Crimson
         Me.BtnHorario.FlatAppearance.BorderSize = 0
         Me.BtnHorario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
         Me.BtnHorario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -119,15 +122,16 @@ Partial Class principal
         Me.BtnHorario.ForeColor = System.Drawing.SystemColors.Window
         Me.BtnHorario.Image = Global.login.My.Resources.Resources.chofer3
         Me.BtnHorario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnHorario.Location = New System.Drawing.Point(0, 172)
+        Me.BtnHorario.Location = New System.Drawing.Point(12, 154)
         Me.BtnHorario.Name = "BtnHorario"
-        Me.BtnHorario.Size = New System.Drawing.Size(220, 67)
+        Me.BtnHorario.Size = New System.Drawing.Size(190, 60)
         Me.BtnHorario.TabIndex = 3
         Me.BtnHorario.Text = "Viajes "
-        Me.BtnHorario.UseVisualStyleBackColor = True
+        Me.BtnHorario.UseVisualStyleBackColor = False
         '
         'btnchofer
         '
+        Me.btnchofer.BackColor = System.Drawing.Color.Crimson
         Me.btnchofer.FlatAppearance.BorderSize = 0
         Me.btnchofer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
         Me.btnchofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -135,12 +139,12 @@ Partial Class principal
         Me.btnchofer.ForeColor = System.Drawing.SystemColors.Window
         Me.btnchofer.Image = Global.login.My.Resources.Resources.chofer3
         Me.btnchofer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnchofer.Location = New System.Drawing.Point(0, 88)
+        Me.btnchofer.Location = New System.Drawing.Point(12, 73)
         Me.btnchofer.Name = "btnchofer"
-        Me.btnchofer.Size = New System.Drawing.Size(220, 67)
+        Me.btnchofer.Size = New System.Drawing.Size(190, 60)
         Me.btnchofer.TabIndex = 1
         Me.btnchofer.Text = "Pilotos"
-        Me.btnchofer.UseVisualStyleBackColor = True
+        Me.btnchofer.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '

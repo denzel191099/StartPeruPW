@@ -36,12 +36,13 @@ Partial Class chofer
         Me.btregistrar = New System.Windows.Forms.Button()
         Me.btmodificar = New System.Windows.Forms.Button()
         Me.bteliminar = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.dgchofer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtcodigochofer
         '
-        Me.txtcodigochofer.Location = New System.Drawing.Point(141, 49)
+        Me.txtcodigochofer.Location = New System.Drawing.Point(141, 53)
         Me.txtcodigochofer.MaxLength = 9
         Me.txtcodigochofer.Name = "txtcodigochofer"
         Me.txtcodigochofer.Size = New System.Drawing.Size(100, 20)
@@ -50,9 +51,10 @@ Partial Class chofer
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(41, 52)
+        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(41, 57)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 13)
+        Me.Label1.Size = New System.Drawing.Size(47, 16)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Codigo:"
         '
@@ -68,9 +70,10 @@ Partial Class chofer
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(41, 102)
+        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(41, 103)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 13)
+        Me.Label2.Size = New System.Drawing.Size(55, 16)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Nombre:"
         '
@@ -85,15 +88,16 @@ Partial Class chofer
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(41, 145)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 13)
+        Me.Label3.Size = New System.Drawing.Size(94, 16)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Apellido Paterno"
         '
         'txtappchofer
         '
-        Me.txtappchofer.Location = New System.Drawing.Point(141, 142)
+        Me.txtappchofer.Location = New System.Drawing.Point(141, 141)
         Me.txtappchofer.MaxLength = 25
         Me.txtappchofer.Name = "txtappchofer"
         Me.txtappchofer.Size = New System.Drawing.Size(100, 20)
@@ -102,9 +106,10 @@ Partial Class chofer
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(41, 195)
+        Me.Label4.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(41, 196)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 13)
+        Me.Label4.Size = New System.Drawing.Size(99, 16)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Apellido Materno"
         '
@@ -119,9 +124,10 @@ Partial Class chofer
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(41, 245)
+        Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(41, 250)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(47, 13)
+        Me.Label5.Size = New System.Drawing.Size(50, 16)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Licencia"
         '
@@ -162,11 +168,21 @@ Partial Class chofer
         Me.bteliminar.Text = "Eliminar"
         Me.bteliminar.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Crimson
+        Me.Panel1.Location = New System.Drawing.Point(-1, -1)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(703, 44)
+        Me.Panel1.TabIndex = 14
+        '
         'chofer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightCoral
         Me.ClientSize = New System.Drawing.Size(702, 385)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.bteliminar)
         Me.Controls.Add(Me.btmodificar)
         Me.Controls.Add(Me.btregistrar)
@@ -181,6 +197,7 @@ Partial Class chofer
         Me.Controls.Add(Me.dgchofer)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtcodigochofer)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "chofer"
         Me.Text = "chofer"
         CType(Me.dgchofer, System.ComponentModel.ISupportInitialize).EndInit()
@@ -203,4 +220,5 @@ Partial Class chofer
     Friend WithEvents btregistrar As Button
     Friend WithEvents btmodificar As Button
     Friend WithEvents bteliminar As Button
+    Friend WithEvents Panel1 As Panel
 End Class
