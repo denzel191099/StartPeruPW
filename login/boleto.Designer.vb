@@ -58,12 +58,10 @@ Partial Class boleto
         Me.btn5 = New System.Windows.Forms.Button()
         Me.lbl10 = New System.Windows.Forms.Label()
         Me.Asientos = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.dgboleto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Asientos, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -444,35 +442,27 @@ Partial Class boleto
         Me.Asientos.TabIndex = 35
         Me.Asientos.TabStop = False
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Crimson
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Panel1.Location = New System.Drawing.Point(-13, -3)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1323, 24)
-        Me.Panel1.TabIndex = 36
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(17, 5)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(17, 17)
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(34, 8)
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.ForeColor = System.Drawing.Color.Cornsilk
+        Me.Label10.Location = New System.Drawing.Point(29, 12)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(37, 13)
-        Me.Label10.TabIndex = 10
+        Me.Label10.TabIndex = 38
         Me.Label10.Text = "Boleto"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 8)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(19, 24)
+        Me.PictureBox1.TabIndex = 37
+        Me.PictureBox1.TabStop = False
         '
         'boleto
         '
@@ -482,7 +472,8 @@ Partial Class boleto
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1188, 844)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lbl10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.cbasiento)
@@ -525,8 +516,6 @@ Partial Class boleto
         Me.Text = "boleto"
         CType(Me.dgboleto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Asientos, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -555,9 +544,6 @@ Partial Class boleto
     Friend WithEvents Label9 As Label
     Friend WithEvents btn5 As Button
     Friend WithEvents Asientos As PictureBox
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label10 As Label
-    Friend WithEvents PictureBox1 As PictureBox
     Public WithEvents Label4 As Label
     Public WithEvents Label5 As Label
     Public WithEvents Label6 As Label
@@ -570,4 +556,6 @@ Partial Class boleto
     Public WithEvents lbl6 As Label
     Public WithEvents lbl10 As Label
     Public WithEvents cbcodigo As ComboBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
