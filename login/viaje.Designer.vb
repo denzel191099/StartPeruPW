@@ -51,7 +51,7 @@ Partial Class Viaje
         Me.dgviaje.Location = New System.Drawing.Point(310, 46)
         Me.dgviaje.Name = "dgviaje"
         Me.dgviaje.ReadOnly = True
-        Me.dgviaje.Size = New System.Drawing.Size(386, 333)
+        Me.dgviaje.Size = New System.Drawing.Size(594, 333)
         Me.dgviaje.TabIndex = 0
         '
         'Label1
@@ -195,9 +195,9 @@ Partial Class Viaje
         Me.Label7.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(50, 295)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(95, 16)
+        Me.Label7.Size = New System.Drawing.Size(80, 16)
         Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Codigo Autobus:"
+        Me.Label7.Text = "Codigo Avion:"
         '
         'Label8
         '
@@ -205,9 +205,9 @@ Partial Class Viaje
         Me.Label8.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(50, 333)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(88, 16)
+        Me.Label8.Size = New System.Drawing.Size(81, 16)
         Me.Label8.TabIndex = 16
-        Me.Label8.Text = "Codigo Chofer:"
+        Me.Label8.Text = "Codigo Piloto:"
         '
         'btregistrar
         '
@@ -256,7 +256,7 @@ Partial Class Viaje
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightCoral
-        Me.ClientSize = New System.Drawing.Size(723, 491)
+        Me.ClientSize = New System.Drawing.Size(916, 491)
         Me.Controls.Add(Me.bteliminar)
         Me.Controls.Add(Me.btmodificar)
         Me.Controls.Add(Me.btregistrar)

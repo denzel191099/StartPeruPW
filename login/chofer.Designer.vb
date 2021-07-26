@@ -63,7 +63,7 @@ Partial Class chofer
         Me.dgchofer.Location = New System.Drawing.Point(308, 53)
         Me.dgchofer.Name = "dgchofer"
         Me.dgchofer.ReadOnly = True
-        Me.dgchofer.Size = New System.Drawing.Size(380, 209)
+        Me.dgchofer.Size = New System.Drawing.Size(566, 209)
         Me.dgchofer.TabIndex = 2
         '
         'Label2
@@ -187,7 +187,7 @@ Partial Class chofer
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightCoral
-        Me.ClientSize = New System.Drawing.Size(702, 385)
+        Me.ClientSize = New System.Drawing.Size(886, 407)
         Me.Controls.Add(Me.bteliminar)
         Me.Controls.Add(Me.btmodificar)
         Me.Controls.Add(Me.btregistrar)

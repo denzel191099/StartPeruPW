@@ -74,6 +74,8 @@ Public Class cliente
         If N = 1 Then
             principal.btnboleto_Click(sender, e)
         End If
+        cn.Close()
+
 
 
     End Sub
@@ -129,6 +131,7 @@ Public Class cliente
 
         login.codigologin = txtcodigocliente.Text
         principal.btnboleto_Click(sender, e)
+        cn.Close()
 
     End Sub
 

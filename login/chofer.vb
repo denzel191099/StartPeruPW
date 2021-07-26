@@ -6,23 +6,24 @@ Public Class chofer
     Private dv As New DataView
 
     Private Sub chofer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Dim conexion As String
         conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
         Dim cn As New SqlConnection
         cn.ConnectionString = conexion
 
-        Dim da As New SqlDataAdapter("select * from chofer ", cn)
+        Dim da As New SqlDataAdapter("select idchofer as id_piloto, nomchofer as nombre_piloto, appchofer as app_piloto, apmchofer as apm_piloto,licencia from chofer ", cn)
         Dim ds As New DataSet
         da.Fill(ds)
         dv.Table = ds.Tables(0)
         dgchofer.DataSource = dv
+
     End Sub
 
     Private Sub btregistrar_Click(sender As Object, e As EventArgs) Handles btregistrar.Click
         Dim conexion As String
         conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
-        Dim cn As New SqlConnection()
-
+        Dim cn As New SqlConnection
         cn.ConnectionString = conexion
 
 
@@ -42,7 +43,7 @@ Public Class chofer
         nombre.Value = StrConv(txtnomchofer.Text, VbStrConv.ProperCase)
 
         apellido1.Value = StrConv(txtappchofer.Text, VbStrConv.ProperCase)
-        apellido2.Value = StrConv(txtapmchofer.Text, VbStrConv.Uppercase)
+        apellido2.Value = StrConv(txtapmchofer.Text, VbStrConv.ProperCase)
         licencia.Value = StrConv(cblicencia.Text, VbStrConv.ProperCase)
 
 
@@ -73,7 +74,7 @@ Public Class chofer
 
 
         cn.Close()
-        Dim da As New SqlDataAdapter("select * from chofer ", cn)
+        Dim da As New SqlDataAdapter("select idchofer as id_piloto, nomchofer as nombre_piloto, appchofer as app_piloto, apmchofer as apm_piloto,licencia from chofer ", cn)
         Dim ds As New DataSet
         da.Fill(ds)
         dv.Table = ds.Tables(0)
@@ -88,8 +89,7 @@ Public Class chofer
     Private Sub bteliminar_Click(sender As Object, e As EventArgs) Handles bteliminar.Click
         Dim conexion As String
         conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
-        Dim cn As New SqlConnection()
-
+        Dim cn As New SqlConnection
         cn.ConnectionString = conexion
 
 
@@ -127,7 +127,7 @@ Public Class chofer
         txtnomchofer.Clear()
 
 
-        Dim da As New SqlDataAdapter("select * from chofer ", cn)
+        Dim da As New SqlDataAdapter("select idchofer as id_piloto, nomchofer as nombre_piloto, appchofer as app_piloto, apmchofer as apm_piloto,licencia from chofer ", cn)
         Dim ds As New DataSet
         da.Fill(ds)
         dv.Table = ds.Tables(0)
@@ -137,9 +137,9 @@ Public Class chofer
     Private Sub btmodificar_Click(sender As Object, e As EventArgs) Handles btmodificar.Click
         Dim conexion As String
         conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
-        Dim cn As New SqlConnection()
-
+        Dim cn As New SqlConnection
         cn.ConnectionString = conexion
+
 
 
 
@@ -172,7 +172,7 @@ Public Class chofer
 
 
         apellido1.Value = StrConv(txtappchofer.Text, VbStrConv.ProperCase)
-        apellido2.Value = StrConv(txtapmchofer.Text, VbStrConv.Uppercase)
+        apellido2.Value = StrConv(txtapmchofer.Text, VbStrConv.ProperCase)
         licencia.Value = StrConv(cblicencia.Text, VbStrConv.ProperCase)
 
 
@@ -209,7 +209,7 @@ Public Class chofer
 
 
 
-        Dim da As New SqlDataAdapter("select * from chofer ", cn)
+        Dim da As New SqlDataAdapter("select idchofer as id_piloto, nomchofer as nombre_piloto, appchofer as app_piloto, apmchofer as apm_piloto,licencia from chofer ", cn)
         Dim ds As New DataSet
         da.Fill(ds)
         dv.Table = ds.Tables(0)
@@ -221,6 +221,7 @@ Public Class chofer
         conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
         Dim cn As New SqlConnection
         cn.ConnectionString = conexion
+
 
         Dim Cmdbusq As New SqlCommand()
         Cmdbusq.CommandType = CommandType.StoredProcedure
