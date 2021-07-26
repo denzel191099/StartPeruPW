@@ -299,7 +299,6 @@ Public Class boleto
         CmdInsertar.CommandText = "insertarasiento"
         CmdInsertar.Connection = cn
         Dim Id As New SqlParameter("@idviaje", SqlDbType.Char, 9)
-
         Dim a1 As New SqlParameter("@asiento1", SqlDbType.Char, 5)
         Dim a2 As New SqlParameter("@asiento2", SqlDbType.Char, 5)
         Dim a3 As New SqlParameter("@asiento3", SqlDbType.Char, 5)
@@ -340,8 +339,8 @@ Public Class boleto
 
         cn.Open()
         Try
-            Dim N As Integer
-            N = CmdInsertar.ExecuteNonQuery()
+            Dim M As Integer
+            M = CmdInsertar.ExecuteNonQuery()
 
 
             cn.Close()
@@ -350,6 +349,62 @@ Public Class boleto
 
         End Try
 
+
+
+        Dim CmdInsertarcuenta As New SqlCommand()
+        CmdInsertarcuenta.CommandType = CommandType.StoredProcedure
+        CmdInsertarcuenta.CommandText = "resgistrarboleto_cuenta"
+        CmdInsertarcuenta.Connection = cn
+        Dim Idviaje As New SqlParameter("@id_viaje", SqlDbType.Char, 9)
+        Dim salida As New SqlParameter("@salida", SqlDbType.VarChar, 30)
+        Dim llegada As New SqlParameter("@llegada", SqlDbType.VarChar, 30)
+        Dim fecha As New SqlParameter("@fecha", SqlDbType.Date)
+        Dim hora_boleto As New SqlParameter("@hora", SqlDbType.Time)
+        Dim costo As New SqlParameter("@costo", SqlDbType.Int)
+        Dim asiento_cliente As New SqlParameter("@asiento_id", SqlDbType.Char, 9)
+        Dim id_cliente_boleto As New SqlParameter("@id_cliente_boleto", SqlDbType.Char, 9)
+        Dim dni_cliente As New SqlParameter("@dni_cliente", SqlDbType.Char, 9)
+
+
+        Idviaje.Value = StrConv(cbcodigo.Text, VbStrConv.Uppercase)
+        salida.Value = StrConv(LB1.Text, VbStrConv.ProperCase)
+
+        llegada.Value = StrConv(LB2.Text, VbStrConv.ProperCase)
+        hora = Convert.ToDateTime(dpboleto.Value)
+        fecha.Value = hora
+        hora_boleto.Value = StrConv(LB4.Text, VbStrConv.ProperCase)
+        costo.Value = StrConv(LB5.Text, VbStrConv.Uppercase)
+        asiento_cliente.Value = StrConv(cbasiento.Text, VbStrConv.ProperCase)
+        id_cliente_boleto.Value = StrConv(login.codigologin, VbStrConv.Uppercase)
+        dni_cliente.Value = StrConv(dni, VbStrConv.ProperCase)
+
+
+
+
+
+
+        CmdInsertarcuenta.Parameters.Add(Idviaje)
+        CmdInsertarcuenta.Parameters.Add(salida)
+        CmdInsertarcuenta.Parameters.Add(llegada)
+        CmdInsertarcuenta.Parameters.Add(fecha)
+        CmdInsertarcuenta.Parameters.Add(hora_boleto)
+        CmdInsertarcuenta.Parameters.Add(costo)
+        CmdInsertarcuenta.Parameters.Add(asiento_cliente)
+        CmdInsertarcuenta.Parameters.Add(id_cliente_boleto)
+        CmdInsertarcuenta.Parameters.Add(dni_cliente)
+
+
+
+        cn.Open()
+
+        Dim N As Integer
+        N = CmdInsertarcuenta.ExecuteNonQuery()
+        If N = 1 Then
+
+
+        End If
+
+        cn.Close()
 
 
 
@@ -448,7 +503,8 @@ Public Class boleto
         col3.Border = 0
         table2.AddCell(col3)
 
-        hora = Convert.ToDateTime(dpboleto.Value)
+
+
 
         col4 = New PdfPCell(New Phrase(hora, font8))
         col4.Border = 0
@@ -679,6 +735,22 @@ Public Class boleto
     End Sub
 
     Private Sub btn5_Click(sender As Object, e As EventArgs) Handles btn5.Click
+
+    End Sub
+
+    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+
+    End Sub
+
+    Private Sub Button137_Click(sender As Object, e As EventArgs) Handles Button137.Click
+
+    End Sub
+
+    Private Sub Button116_Click(sender As Object, e As EventArgs) Handles Button116.Click
+
+    End Sub
+
+    Private Sub Button130_Click(sender As Object, e As EventArgs) Handles Button130.Click
 
     End Sub
 End Class

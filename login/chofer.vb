@@ -6,24 +6,19 @@ Public Class chofer
     Private dv As New DataView
 
     Private Sub chofer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim conexion As String
-        conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
-        Dim cn As New SqlConnection
-        cn.ConnectionString = conexion
+
+        conection()
 
         Dim da As New SqlDataAdapter("select * from chofer ", cn)
         Dim ds As New DataSet
         da.Fill(ds)
         dv.Table = ds.Tables(0)
         dgchofer.DataSource = dv
+
     End Sub
 
     Private Sub btregistrar_Click(sender As Object, e As EventArgs) Handles btregistrar.Click
-        Dim conexion As String
-        conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
-        Dim cn As New SqlConnection()
-
-        cn.ConnectionString = conexion
+        conection()
 
 
         Dim CmdInsertar As New SqlCommand()
@@ -86,11 +81,8 @@ Public Class chofer
     End Sub
 
     Private Sub bteliminar_Click(sender As Object, e As EventArgs) Handles bteliminar.Click
-        Dim conexion As String
-        conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
-        Dim cn As New SqlConnection()
+        conection()
 
-        cn.ConnectionString = conexion
 
 
 
@@ -135,11 +127,8 @@ Public Class chofer
     End Sub
 
     Private Sub btmodificar_Click(sender As Object, e As EventArgs) Handles btmodificar.Click
-        Dim conexion As String
-        conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
-        Dim cn As New SqlConnection()
+        conection()
 
-        cn.ConnectionString = conexion
 
 
 
@@ -217,10 +206,8 @@ Public Class chofer
     End Sub
 
     Private Sub txtcodigochofer_TextChanged(sender As Object, e As EventArgs) Handles txtcodigochofer.TextChanged
-        Dim conexion As String
-        conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
-        Dim cn As New SqlConnection
-        cn.ConnectionString = conexion
+        conection()
+
 
         Dim Cmdbusq As New SqlCommand()
         Cmdbusq.CommandType = CommandType.StoredProcedure
