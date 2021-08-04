@@ -26,7 +26,6 @@ Public Class chofer
         Dim cn As New SqlConnection
         cn.ConnectionString = conexion
 
-
         Dim CmdInsertar As New SqlCommand()
         CmdInsertar.CommandType = CommandType.StoredProcedure
         CmdInsertar.CommandText = "registrarchofer"
@@ -109,7 +108,7 @@ Public Class chofer
 
 
         Dim N As Integer
-            N = CmdEliminar.ExecuteNonQuery()
+        N = CmdEliminar.ExecuteNonQuery()
 
 
 
@@ -217,10 +216,8 @@ Public Class chofer
     End Sub
 
     Private Sub txtcodigochofer_TextChanged(sender As Object, e As EventArgs) Handles txtcodigochofer.TextChanged
-        Dim conexion As String
-        conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
-        Dim cn As New SqlConnection
-        cn.ConnectionString = conexion
+        conection()
+
 
 
         Dim Cmdbusq As New SqlCommand()
