@@ -198,8 +198,7 @@ Public Class Viaje
     Private Sub bteliminar_Click(sender As Object, e As EventArgs) Handles bteliminar.Click
         Dim conexion As String
         conexion = "Data Source=DESKTOP-K9B34K5;Initial Catalog=Empresadetransporte;Integrated Security=True"
-        Dim cn As New SqlConnection()
-
+        Dim cn As New SqlConnection
         cn.ConnectionString = conexion
 
 
@@ -214,6 +213,7 @@ Public Class Viaje
         Dim Id As New SqlParameter("@idviaje", SqlDbType.Char, 9)
         Id.Value = txtcodigoviaje.Text
         CmdEliminar.Parameters.Add(Id)
+
 
         Dim CmdEliminar1 As New SqlCommand()
         CmdEliminar1.CommandType = CommandType.StoredProcedure
@@ -230,17 +230,13 @@ Public Class Viaje
 
         Dim B As Integer
         Dim N As Integer
-        Try
-            B = CmdEliminar1.ExecuteNonQuery()
-            N = CmdEliminar.ExecuteNonQuery()
+        B = CmdEliminar1.ExecuteNonQuery()
+        N = CmdEliminar.ExecuteNonQuery()
 
-        Catch ex As Exception
-
-        End Try
 
 
         If N = 1 Then
-            MsgBox("Registro eliminado", vbInformation, "Viaje")
+            MsgBox("Registro eliminado", vbInformation, "Viajes")
 
         End If
 
