@@ -35,6 +35,7 @@ Partial Class principal
         Me.timerocultaremenu = New System.Windows.Forms.Timer(Me.components)
         Me.timemostrarmenu = New System.Windows.Forms.Timer(Me.components)
         Me.Panelcontenedor = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panelcabecera.SuspendLayout()
         Me.Panelmenu.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,6 +67,7 @@ Partial Class principal
         'Panelmenu
         '
         Me.Panelmenu.BackColor = System.Drawing.Color.LightCoral
+        Me.Panelmenu.Controls.Add(Me.Button2)
         Me.Panelmenu.Controls.Add(Me.btngestioncliente)
         Me.Panelmenu.Controls.Add(Me.btnchofer)
         Me.Panelmenu.Controls.Add(Me.btnboleto)
@@ -174,6 +176,23 @@ Partial Class principal
         Me.Panelcontenedor.Size = New System.Drawing.Size(930, 748)
         Me.Panelcontenedor.TabIndex = 2
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Crimson
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.Window
+        Me.Button2.Image = Global.login.My.Resources.Resources.chofer3
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(12, 406)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(190, 60)
+        Me.Button2.TabIndex = 5
+        Me.Button2.Text = "Reportes"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -203,4 +222,5 @@ Partial Class principal
     Friend WithEvents Panelcontenedor As Panel
     Friend WithEvents btngestioncliente As Button
     Friend WithEvents btnboleto As Button
+    Friend WithEvents Button2 As Button
 End Class

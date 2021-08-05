@@ -73,7 +73,7 @@ Public Class principal
 
     End Sub
 
-    Private Sub btngestioncliente_Click(sender As Object, e As EventArgs) Handles btngestioncliente.Click
+    Private Sub btngestioncliente_Click(sender As Object, e As EventArgs) Handles btngestioncliente.Click, Button2.Click
         abrirpanelform(New cliente)
     End Sub
 
